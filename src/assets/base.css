@@ -1,0 +1,119 @@
+/* Pro-Ciudadano GovTech + AI Professional Color Palette */
+:root {
+  /* Dark Theme (Default) */
+  --pc-dark-bg: #0a0e27;
+  --pc-dark-secondary: #151b3d;
+  --pc-dark-card: #1e2749;
+  --pc-dark-elevated: #252d54;
+
+  /* Light Theme */
+  --pc-light-bg: #f5f7fa;
+  --pc-light-secondary: #ffffff;
+  --pc-light-card: #ffffff;
+  --pc-light-elevated: #f8f9fb;
+
+  /* Accent Colors - AI Theme */
+  --pc-accent-primary: #5b7cff;
+  --pc-accent-primary-hover: #4a69e8;
+  --pc-accent-secondary: #00d4ff;
+  --pc-accent-gradient: linear-gradient(135deg, #5b7cff 0%, #00d4ff 100%);
+
+  /* Governmental Colors */
+  --pc-gov-blue: #1e40af;
+  --pc-gov-green: #10b981;
+  --pc-gov-gold: #f59e0b;
+
+  /* Semantic Colors */
+  --pc-success: #10b981;
+  --pc-warning: #f59e0b;
+  --pc-error: #ef4444;
+  --pc-info: #3b82f6;
+
+  /* Neutral Colors */
+  --pc-text-primary-dark: #ffffff;
+  --pc-text-secondary-dark: rgba(255, 255, 255, 0.75);
+  --pc-text-muted-dark: rgba(255, 255, 255, 0.5);
+
+  --pc-text-primary-light: #1e293b;
+  --pc-text-secondary-light: #475569;
+  --pc-text-muted-light: #94a3b8;
+
+  --pc-border-dark: rgba(255, 255, 255, 0.1);
+  --pc-border-hover-dark: rgba(255, 255, 255, 0.2);
+
+  --pc-border-light: #e2e8f0;
+  --pc-border-hover-light: #cbd5e1;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  --shadow-accent: 0 8px 24px rgba(91, 124, 255, 0.3);
+}
+
+/* Dark Theme Variables */
+[data-theme='dark'] {
+  --color-background: var(--pc-dark-bg);
+  --color-background-soft: var(--pc-dark-secondary);
+  --color-background-mute: var(--pc-dark-card);
+  --color-background-elevated: var(--pc-dark-elevated);
+  --color-border: var(--pc-border-dark);
+  --color-border-hover: var(--pc-border-hover-dark);
+  --color-text-primary: var(--pc-text-primary-dark);
+  --color-text-secondary: var(--pc-text-secondary-dark);
+  --color-text-muted: var(--pc-text-muted-dark);
+  --color-shadow: rgba(0, 0, 0, 0.3);
+}
+
+/* Light Theme Variables */
+[data-theme='light'] {
+  --color-background: var(--pc-light-bg);
+  --color-background-soft: var(--pc-light-secondary);
+  --color-background-mute: var(--pc-light-card);
+  --color-background-elevated: var(--pc-light-elevated);
+  --color-border: var(--pc-border-light);
+  --color-border-hover: var(--pc-border-hover-light);
+  --color-text-primary: var(--pc-text-primary-light);
+  --color-text-secondary: var(--pc-text-secondary-light);
+  --color-text-muted: var(--pc-text-muted-light);
+  --color-shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Common Variables */
+:root {
+  --color-accent: var(--pc-accent-primary);
+  --color-accent-hover: var(--pc-accent-primary-hover);
+  --section-gap: 160px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text-secondary);
+  background: var(--color-background);
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
+  line-height: 1.6;
+  font-family:
+    'Inter',
+    'Segoe UI',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Roboto',
+    sans-serif;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
